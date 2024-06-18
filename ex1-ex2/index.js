@@ -1,4 +1,4 @@
-EX1;
+//EX1;
 
 class Cars {
   constructor(brand, model, color, mileage) {
@@ -9,14 +9,14 @@ class Cars {
   }
 
   getCarDetails() {
-    return "Cars[brand = ${this.brand}, model = ${this.model}, color = ${this.color}, mileage = ${this.mileage}]";
+    return `Cars[brand = ${this.brand}, model = ${this.model}, color = ${this.color}, mileage = ${this.mileage}]`;
   }
 }
 
 function displayCars() {
-  const car1 = new Cars("VOLVO", "XC-60", "Black", "234.000");
-  const car2 = new Cars("Mazda", "CX-5", "Geen", "111.000");
-  const car3 = new Cars("Dacia", "Duster", "Blue", "20.000");
+  const car1 = new Cars("VOLVO", "XC-60", "Black", 234_000);
+  const car2 = new Cars("Mazda", "CX-5", "Geen", 111_000);
+  const car3 = new Cars("Dacia", "Duster", "Blue", 20_000);
 
   console.log(car1.getCarDetails());
   console.log(car2.getCarDetails());
@@ -25,7 +25,7 @@ function displayCars() {
 
 displayCars();
 
-EX2;
+//EX2;
 
 class Car {
   constructor(brand, model, color, mileage) {
@@ -36,7 +36,7 @@ class Car {
   }
 
   getCarDetails() {
-    return "Car[brand = ${this.brand}, model = ${this.model}, color = ${this.color}, mileage = ${this.mileage}]";
+    return `Car[brand = ${this.brand}, model = ${this.model}, color = ${this.color}, mileage = ${this.mileage}]`;
   }
 }
 
@@ -51,8 +51,8 @@ class RacingCar extends Car {
 }
 
 function displayCarDetails() {
-  const car1 = new RacingCar("Toyota", "Turbo", "Red", "100.000");
-  const car2 = new RacingCar("Ferrari", "F8", "Yellow", "50.000");
+  const car1 = new RacingCar("Toyota", "Turbo", "Red", 100_000);
+  const car2 = new RacingCar("Ferrari", "F8", "Yellow", 50_000);
 
   console.log(car1.participation(1));
   console.log(car1.getCarDetails());
